@@ -21,8 +21,13 @@ Measurements <- read.csv(file = "https://raw.githubusercontent.com/andrewzhangzh
 
 ui <- fluidPage(
   shinythemes::themeSelector(),
+  navbarPage("mental health survey:",
+             
+             tabPanel("Home",
+                      
   sidebarLayout(
     sidebarPanel(
+      HTML("<h3>Input parameters</h3>"),
       selectInput(
         inputId = "x",
         label = "X-axis:",
@@ -151,6 +156,8 @@ ui <- fluidPage(
       verbatimTextOutput(outputId = "lmoutput") # regression output
     )
   )
+)
+)
 )
 
 
