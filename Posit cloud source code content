@@ -156,7 +156,21 @@ ui <- fluidPage(
       verbatimTextOutput(outputId = "lmoutput") # regression output
     )
   )
-)
+),
+tabPanel("About", 
+         titlePanel("About"),                                                           
+         strong("Student Mental Health Survey"),
+         p("Key aspects covered in the dataset include:"),
+         p("Demographic details such as gender, age, and university."),
+         p("Academic details like degree level, major, academic year, and current CGPA."),
+         p("Student's residential status and experiences with discrimination, harassment, or bullying on campus."),
+         p("Student's lifestyle factors include frequency of sports engagement and average sleep hours per night."),
+         p("Student's satisfaction with their field of study and their perception of academic workload."),
+         p("Addressing the academic pressure, financial concerns, and the quality of social relationships on campus."),
+         strong("References"),                                    
+         p("Frequency of experiencing depression, anxiety, feelings of isolation, and insecurity about the future."),
+         p("Activities that students engage in to relieve stress.")
+) #tabPanel(), About
 )
 )
 
